@@ -1,0 +1,22 @@
+.card{
+    width:5rem;
+    height:5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    align-items: center;
+    border: 3px solid var(--color-slate);
+    border-radius: 7px;
+    padding: 0px 26px 2rem 26px;
+}
+
+.card>:nth-child(1){
+    transform: scale(0.5);
+}
+
+.card>:nth-child(2){
+    color: var(--color-secondary-main);
+    font-size: 16px;
+    padding-right: 11px;
+}
