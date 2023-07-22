@@ -24,7 +24,7 @@ const data = [
     title2:
       "Realstate Website is created using React js and Tailwind CSS. We can search the types of appartment, houses in different countries with different price range. Login system is just a frontend design",
     github: "https://github.com/35anurag/Realstate-website",
-    live: "https://35anurag.github.io/Realstate-website/",
+    live: "https://35anurag.github.io/",
   },
   {
     id: 2,
