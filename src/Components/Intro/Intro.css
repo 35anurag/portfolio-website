@@ -158,8 +158,39 @@
 }
 
 
+/* ================ MEDIA QUERIES(SMALL DEVICES)==================== */
+@media (max-width: 768px){
+    .intro{
+        font-size: 14px;
+    }
+
+    .i-left{
+        margin-top: 8rem;
+        margin-right: 2rem;
+        margin-left: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .i-name>:nth-child(2) {
+        font-size: 3.5rem;
+    }
+
+    .i-right{
+        margin-top: 1rem;
+        margin-left: 20%;
+        display: flex;
+    }
+}
 
 /* ================ MEDIA QUERIES(MEDIUM DEVICES)==================== */
+@media (max-width: 1024px){
+    .i-name>:nth-child(2) {
+        font-size: 3rem;
+    }
 
+    .intro{
+        margin-left: -15px;
+    }
 
-/* ================ MEDIA QUERIES(SMALL DEVICES)==================== */
+}

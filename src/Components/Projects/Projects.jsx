@@ -1,11 +1,11 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import website from "../../image/realstate.png";
 import website1 from "../../image/netflix.png";
 import ui from "../../image/ui.jpg";
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { BsArrowRightShort } from "react-icons/bs";
 
@@ -24,7 +24,7 @@ const data = [
     title2:
       "Realstate Website is created using React js and Tailwind CSS. We can search the types of appartment, houses in different countries with different price range. Login system is just a frontend design",
     github: "https://github.com/35anurag/Realstate-website",
-    live: "https://35anurag.github.io/",
+    live: "https://reallstate.netlify.app/",
   },
   {
     id: 2,
@@ -33,29 +33,30 @@ const data = [
     title2:
       "Netflix Clone is a frontend design of Netflix created using React js and Tailwind Css. Here, Api is integrated for the movies.",
     github: "https://github.com/35anurag/netflix-clone",
-    live: "https://35anurag.github.io/netflix-clone/",
+    live: "https://netflixfrontendclonee.netlify.app/",
   },
   {
     id: 3,
     image: ui,
-    title1: "Instagram UI design",
+    title1: "Blog Website",
     title2:
       "This is made using Figma where new app components and icons with great features are added",
     github: "http://github.com",
     live: "http://github.com",
   },
-  
 ];
 
 const Projects = () => {
-  useEffect(()=>{
-    Aos.init({duration: 2000});
-  }, [])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div className="projects" id="projects">
-      <h2>Projects</h2>
-      <span>My recent works</span>
+      
+        <h2>Projects</h2>
+        <span>My recent works</span>
+      
       <div className="container p-container">
         <Swiper
           modules={[Navigation, Pagination, Keyboard]}

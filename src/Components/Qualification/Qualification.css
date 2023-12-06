@@ -1,27 +1,6 @@
-/* @keyframes slideed{
-    0%{
-        transform: translate(-100px, 0px);
-        opacity: 0.3;
-    }
-    100%{
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideex{
-    0%{
-        transform: translate(100px, 0px);
-        opacity: 0.3;
-    }
-    100%{
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-} */
-
 .qualification{
-    height: 90vh;
+    height: auto;
+    margin-top: 10rem;
 }
 
 .q_heading>h2{
@@ -68,7 +47,6 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    /* animation: slideed 2s ease; */
 }
 
 .q_ed div{
@@ -202,4 +180,21 @@
 /* another list is not visible  */
 .q_ed_list2:nth-child(2){ 
     opacity: 0;
+}
+
+/* ================ MEDIA QUERIES(SMALL DEVICES)==================== */
+@media (max-width: 768px){
+    .q_second_heading{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .q_sky{
+        margin-left: 1px !important;
+    }
+
+    .q_col{
+        margin-top: 1rem;
+    }
+    
 }

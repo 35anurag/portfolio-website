@@ -36,7 +36,7 @@ const Skills = () => {
           {data.map((skill) => {
             return (
               <div>
-                <div className="frontend" data-Aos="fade-up">
+                <div className="frontend" onClick={() => toggleDropDown(skill.id)} data-Aos="fade-up">
                   <h3>{skill.icon}</h3>
                   <div className="front">
                     <div className="front-text">
@@ -45,7 +45,6 @@ const Skills = () => {
                     </div>
                     <div
                       className="down-arrow"
-                      onClick={() => toggleDropDown(skill.id)}
                     >
                       {openDropdown === skill.id ? (
                         <BsArrowUpShort />
