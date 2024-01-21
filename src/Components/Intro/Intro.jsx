@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 import { FiGithub } from "react-icons/fi";
 import { BsFacebook, BsArrowDownShort } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import image from "../../image/profile.jpeg";
 
 const PDF_FILE_URL = process.env.PUBLIC_URL + "/Resume.pdf";
@@ -36,12 +36,15 @@ const Intro = () => {
             <a href="https://www.instagram.com/anurag.regmi.02/">
               <FaInstagram />
             </a>
+            <a href="https://www.linkedin.com/in/anurag-regmi-0509b8226/">
+            <FaLinkedin />
+            </a>
             </div>
           </div>
           <div className="i-name">
             <span>Hi! I Am</span>
             <span>Anurag Regmi</span>
-            <span>Computer Science Engineering student</span>
+            <span>Specialized in Frontend Development with basic knowledge of Backend tools. Currently studying Computer Science Engineering.</span>
             <button onClick={handleDownload} className="button i-button">
               Resume
             </button>

@@ -20,6 +20,7 @@
     background:blur(40px);
     margin-top: -8px;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+    padding: 9px;
 }
 
 .n-left {

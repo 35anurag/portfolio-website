@@ -1,19 +1,15 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import Card from "../Card/Card";
+import { VscArrowSmallRight } from "react-icons/vsc";
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-import javascript from "../../image/javascript.png";
-import css from "../../image/css3.png";
-import html from "../../image/html5.png";
-import figma from "../../image/figma.png";
 
 const About = () => {
-  useEffect(()=>{
-    Aos.init({duration: 2000});
-  }, [])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div className="about container" id="about">
@@ -21,32 +17,60 @@ const About = () => {
         <h2>About me</h2>
         <span>Get to know</span>
         <div className="about-text" data-Aos="fade-up">
-          <span>
-            I'm very ambitious student studying bachelor's in Computer
-            Engineering. As a front-end developer i am looking for a role in
-            established IT companies with the opportunity to work with the
-            latest technologies on the challenging and diverse projects.
-          </span>
-          <span>
-            I'm quitely confident, curious, eager to learn new things and
-            working daily to improve myself.
-          </span>
+          <div className="about-text-content">
+            <span>
+              I'm ambitious student studying Bachelor's in Computer Engineering.
+              As a Computer Engineering student, I am fond of FrontEnd
+              Development with some knowledge in Backend too. I am more
+              interested in working with new technology and creating stuffs that
+              is interactive. I'm quitely confident, curious, eager to learn new
+              things and working daily to improve myself.
+            </span>
+            <span>
+              Here are few technologies I am interested and working on:
+            </span>
+            <div className="technologies">
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>Javascript (ESC6+)</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>React Js</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>Typescript</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>Next js</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>MERN</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>Tailwind CSS</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>Figma</p>
+              </div>              
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>C++</p>
+              </div>
+              <div className="tech-detail">
+                <VscArrowSmallRight className="about-tech" />
+                <p>Python</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="a-cards" data-Aos="fade-up">
-        <div className="a-cards1"  style={{ left: "14rem" }}>
-          <Card img={javascript} heading="Javascript" />
-        </div>
-        <div className="a-cards2" style={{ top: "7rem", left: "2rem" }}>
-          <Card img={css} heading="CSS" />
-        </div>
-        <div className="a-cards3" style={{ top: "13rem", left: "14rem" }}>
-          <Card img={html} heading="HTML" />
-        </div>
-        <div className="a-cards4" style={{ top: "19rem", left: "2rem" }}>
-          <Card img={figma} heading="Figma" />
-        </div>
-      </div>
+      
     </div>
   );
 };

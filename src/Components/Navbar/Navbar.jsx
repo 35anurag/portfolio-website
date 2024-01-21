@@ -13,7 +13,7 @@ function Navbar() {
           <div className="n-topic">
             <a href="#">Home</a>
             <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+            {/* <a href="#skills">Skills</a> */}
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
           </div>

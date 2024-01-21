@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Intro from "./Components/Intro/Intro";
 import About from "./Components/About/About";
-import Skills from "./Components/Skills/Skills";
+// import Skills from "./Components/Skills/Skills";
 import Qualification from "./Components/Qualification/Qualification";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
@@ -15,7 +15,7 @@ function App(){
         <Navbar />
         <Intro />
         <About />
-        <Skills />
+        {/* <Skills /> */}
         <Qualification />
         <Projects />
         <Contact />
