@@ -52,7 +52,7 @@ const Intro = () => {
         </div>
         <div className="i-right">
           <div className="circle1"></div>
-          <img src={image} alt="profile image"></img>
+          <img src={image} alt="profile" />
         </div>
         <div className="arrow">
           <i>
