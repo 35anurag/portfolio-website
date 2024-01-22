@@ -10,12 +10,6 @@ import "aos/dist/aos.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-
-// import { BsArrowRightShort } from "react-icons/bs";
-
-// import { Navigation, Pagination, Keyboard } from "swiper";
-// import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

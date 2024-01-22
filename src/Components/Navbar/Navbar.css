@@ -12,6 +12,7 @@
 .n-wrapper {
     height: 10vh;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     position: fixed;
     z-index: 2;
@@ -24,7 +25,6 @@
 }
 
 .n-left {
-    flex: 1;
     display: flex;
     align-items: center;
 }
@@ -39,10 +39,10 @@
 
 .n-right {
     display: flex;
-    flex: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-weight: 400;
+
 }
 
 .n-list {
@@ -71,6 +71,92 @@ span {
     margin-left: 1rem;
 }
 
-/* .n-button{
-    flex: 2;
-} */
+
+
+
+
+/* ================ MEDIA QUERIES(SMALLER DEVICES)==================== */ 
+@media (max-width: 600px){
+    .toggle-button{
+        margin-right: 2rem;
+    }
+    
+    .nav-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #112240;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .open-button{
+        text-decoration: none;
+        transition: 3s ease-in-out;
+    }
+    
+    .open-button>button{
+        border: none;
+        text-decoration: none;
+        background-color: var(--color-bg);
+        color: var(--color-slate);
+        font-size: 30px;
+    }
+    
+    .close-button{
+        margin-top: 18px;
+        margin-left: 10rem;
+        text-decoration: none;
+    }
+    
+    .close-button>button{
+        border: none;
+        text-decoration: none;
+        background-color: #112240;
+        color: var(--color-slate);
+        font-size: 30px;
+    }
+    
+    .nav-link{
+        width: 15rem;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        font-size: 18px;
+    }
+    
+    .nav-link>a{
+        text-decoration: none;
+        color: var(--color-secondary);
+    }
+    
+    .nav-link>a:hover{
+        text-decoration: underline;
+    }
+    
+    .n-left{
+        margin-left: -3.5rem;
+    }
+
+    .n-right{
+        display: none;
+    }
+
+    .open-button{
+        margin-left: 12rem;
+    }
+}
+
+/* ================ MEDIA QUERIES(MEDIUM DEVICES)==================== */ 
+@media (min-width: 601px), (max-width: 1024px) and (min-width:1080px){
+    .open-button{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+}

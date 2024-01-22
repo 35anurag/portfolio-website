@@ -1,27 +1,6 @@
-/* @keyframes slide{
-    0%{
-        transform: translate(90px, 0px);
-        opacity: 0;
-    }
-    100%{
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide1{
-    0%{
-        transform: translate(0, 100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-} */
-
 .contact{
     height: 90vh;  
+    margin-top: 5rem;
 }
 
 .contact>h2{
@@ -110,5 +89,47 @@ form ::placeholder{
     color: var(--color-icon);
     font-size: 16px;
     font-weight: 500;
+}
+
+/* ================ MEDIA QUERIES(SMALLER DEVICES)==================== */ 
+@media (max-width: 600px){
+
+    .contact{
+        margin-top: 1rem;
+        height: auto;
+    }
+
+    .c-container{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .c-option{
+        margin-left: -13rem;
+    }
+
+    form{
+        margin-left: 5rem;
+    }
+
+}
+
+/* ================ MEDIA QUERIES(MEDIUM DEVICES)==================== */ 
+@media (min-width: 601px) and (max-width: 1024px){
+    .contact{
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .c-container{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
 }
 
