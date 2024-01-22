@@ -169,7 +169,7 @@
 .project-link{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 10px;
     font-size: 20px;
 
