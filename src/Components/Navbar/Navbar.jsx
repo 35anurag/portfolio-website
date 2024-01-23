@@ -17,13 +17,13 @@ function Navbar() {
     <div className="n-wrapper">
       <div className="n-left">
         <div className="n-name">
-          <a href="#">Anurag</a>
+          <a href="#intro">Anurag</a>
         </div>
       </div>
       <div className="n-right">
         <div className="n-list">
           <div className="n-topic">
-            <a href="#">Home</a>
+            <a href="#intro">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -46,7 +46,7 @@ function Navbar() {
               </button>
             </div>
             <div className="nav-link">
-              <a onClick={handleClose} href="#">
+              <a onClick={handleClose} href="#intro">
                 Home
               </a>
               <a onClick={handleClose} href="#about">

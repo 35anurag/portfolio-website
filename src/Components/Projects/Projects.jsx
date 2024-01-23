@@ -79,7 +79,7 @@ const Projects = () => {
                 <div className="project-items">
                   <img
                     src={project.image}
-                    alt="image"
+                    alt="projectimages"
                     className="project-image"
                   />
                   <div className="project-detail">

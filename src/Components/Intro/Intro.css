@@ -34,8 +34,9 @@
 } 
 
 .intro {
-    height: screen;
+    height: auto;
     font-size: 17px;
+    margin-top: 3rem;
 }
 
 .i-left {
