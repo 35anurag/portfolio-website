@@ -14,16 +14,16 @@ function Navbar() {
     isToggleButton(false);
   };
   return (
-    <div className="n-wrapper">
+    <nav className="n-wrapper">
       <div className="n-left">
         <div className="n-name">
-          <a href="#intro">Anurag</a>
+          <a href="#home">Anurag</a>
         </div>
       </div>
       <div className="n-right">
         <div className="n-list">
           <div className="n-topic">
-            <a href="#intro">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -46,7 +46,7 @@ function Navbar() {
               </button>
             </div>
             <div className="nav-link">
-              <a onClick={handleClose} href="#intro">
+              <a onClick={handleClose} href="#home">
                 Home
               </a>
               <a onClick={handleClose} href="#about">
@@ -62,7 +62,7 @@ function Navbar() {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 }
 
