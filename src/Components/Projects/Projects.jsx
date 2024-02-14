@@ -83,18 +83,24 @@ const Projects = () => {
                     className="project-image"
                   />
                   <div className="project-detail">
-                    <p className="project-name">{project.name}</p>
-                    <p className="project-desc">{project.desc}</p>
-                    <div className="project-tools">
-                      <p>{project.tools.tools1}</p>
-                      <p>{project.tools.tools2}</p>
-                      <p>{project.tools.tools3}</p>
-                      <p>{project.tools.tools4}</p>
-                      <p>{project.tools.tools5}</p>
-                    </div>
-                    <div className="project-link">
-                      <a href={project.github}><FaGithub /></a>
-                      <a href={project.live}><FaLongArrowAltRight /></a>
+                    <div className="project-contents">
+                      <p className="project-name">{project.name}</p>
+                      <p className="project-desc">{project.desc}</p>
+                      <div className="project-tools">
+                        <p>{project.tools.tools1}</p>
+                        <p>{project.tools.tools2}</p>
+                        <p>{project.tools.tools3}</p>
+                        <p>{project.tools.tools4}</p>
+                        <p>{project.tools.tools5}</p>
+                      </div>
+                      <div className="project-link">
+                        <a href={project.github}>
+                          <FaGithub />
+                        </a>
+                        <a href={project.live}>
+                          <FaLongArrowAltRight />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
