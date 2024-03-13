@@ -3,6 +3,7 @@ import "./Projects.css";
 import realstate from "../../image/realstate.png";
 import netflix from "../../image/netflix.png";
 import blog from "../../image/blog.png";
+import tracksub from "../../image/tracksub.png"
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -58,6 +59,22 @@ const data = [
     },
     github: "https://github.com/35anurag/Blog-website",
     live: "https://blogg-website.vercel.app/",
+  },
+  {
+    id: 4,
+    image: tracksub,
+    name: "TrackSub",
+    desc: "Developed a dynamic Fullstack website utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js) and Tailwind CSS, integrating modern design principles for visually appealing UI/UX.",
+    tools: {
+      tools1: "React js",
+      tools2: "Javascript",
+      tools3: "Tailwind CSS",
+      tools4: "MongoDB",
+      tools5: "Express js",
+      tools6: "Node js",
+    },
+    github: "https://github.com/35anurag/tracksub-frontend",
+    live: "https://track-sub.onrender.com/",
   },
 ];
 
